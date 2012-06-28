@@ -11,14 +11,11 @@ var home = (require('/ui/home')).createHomeView({
 	width:320,
 	height:460
 });
-window.add(home);
 
 var settings = (require('/ui/settings')).createSettingsView({
 	width:320,
 	height:460,
-	visible:false
 });
-window.add(settings);
 
 var detail = Ti.UI.createView({
 	backgroundColor:'#333'
@@ -32,6 +29,8 @@ var coverSlider = CoverSlider.createCoverSlider({
 	cover:covers[0],
 	right:detail
 });
+
+window.add(coverSlider);
 
 Ti.App.addEventListener('app:changeCover', function(e){
 	if(covers[e.index]){

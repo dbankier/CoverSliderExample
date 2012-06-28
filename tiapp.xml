@@ -47,5 +47,6 @@
     </mobileweb>
     <modules>
     		<module platform="iphone" version="0.3">ti.viewshadow</module>
+    		<module platform="iphone" version="1.2">ti.draggable</module>
     </modules>
 </ti:app>
